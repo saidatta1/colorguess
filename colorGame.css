@@ -9,9 +9,9 @@ body {
 	background: purple;
 	padding-bottom: 30%;
 	float: left;
-	margin: 1.66%;
-	border-radius: 15%;
-	transition: background 0.6s;
+	margin: 1.67%;
+	border-radius: 18%;
+	transition: background 0.7s;
 	-webkit-transition: background 0.6s;
 	-moz-transition: background 0.6s;
 }
@@ -43,7 +43,7 @@ h1 {
 
 #stripe {
 	background: white;
-	height: 30px;
+	height: 35px;
 	text-align: center;
 	color: black;
 }
