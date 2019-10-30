@@ -23,10 +23,10 @@ body {
 
 h1 {
 	text-align: center;
-	line-height: 1.1;
+	line-height: 1.3;
 	font-weight: normal;
-	color: black;
-	background:#000000;
+	color: white;
+	background: steelblue;
 	margin: 0;
 	text-transform: uppercase;
 	padding: 20px 0;
