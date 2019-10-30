@@ -32,6 +32,9 @@ function setupModeButtons(){
 function setupSquares(){
 	for(var i = 0; i < squares.length; i++){
 	//add click listeners to square
+    
+  var guessCount = 3;
+  
 		squares[i].addEventListener("click", function(){
 			//grab color of clicked square
 			var clickedColor = this.style.backgroundColor;
@@ -41,10 +44,24 @@ function setupSquares(){
 				resetButton.textContent = "Play Again?"
 				changeColors(clickedColor);
 				h1.style.backgroundColor = clickedColor;
-			} else {
+			}
+			else if(guessCount==0)
+			{
+				messageDisplay.textContent = "Attempts over,you lose ";
+				resetButton.textContent = "Play Again?"
+				
+			}
+			 else {
 				this.style.backgroundColor = "#232323";
 				messageDisplay.textContent = "Try Again"
+				guessCount--;
+				
 			}
+			
+
+			
+
+    
 		});
 	}
 }

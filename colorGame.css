@@ -18,15 +18,15 @@ body {
 
 #container {
 	margin: 20px auto;
-	max-width: 600px;
+	max-width: 500px;
 }
 
 h1 {
 	text-align: center;
 	line-height: 1.1;
 	font-weight: normal;
-	color: white;
-	background: steelblue;
+	color: black;
+	background:#000000;
 	margin: 0;
 	text-transform: uppercase;
 	padding: 20px 0;
