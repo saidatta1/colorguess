@@ -41,17 +41,22 @@ function setupSquares(){
 			//compare color to pickedColor
 			if(clickedColor === pickedColor){
 				messageDisplay.textContent = "Correct!";
+				guessCount=3;
 				resetButton.textContent = "Play Again?"
 				changeColors(clickedColor);
 				h1.style.backgroundColor = clickedColor;
-			}
-			else if(guessCount==0)
-			{
+			}else if(guessCount==0){
 				messageDisplay.textContent = "Attempts over,you lose ";
-				resetButton.textContent = "Play Again?"
+				setTimeout(function(){
+					reset();
+						}, 500); 
 				
-			}
-			 else {
+				//alert("Play Again?");
+				guessCount=3;
+				/*changeColors(clickedColor);
+				h1.style.backgroundColor = clickedColor;*/
+				
+			} else {
 				this.style.backgroundColor = "#232323";
 				messageDisplay.textContent = "Try Again"
 				guessCount--;
